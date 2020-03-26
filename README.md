@@ -24,26 +24,25 @@ Things you may want to cover:
 * ...
 
 # database設計
-##　usersテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false|
+|name|string|null: false|
 |passward|string|null: false|
-|username|string|null: false|
 |email|string|null: false|
 ### Association
 - has_many :comments
 - has_many :groups, through: :users_groups
+- has_many :users_groups
  
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
-|user_id|integer|null: false|
-|message_id|text|null: false|
+|name|string|null: false|
 ### Association
 - has_many :messages
 - has_many :users, through: :users_groups
+- has_many :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -56,7 +55,7 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
-## groups_usersテーブル
+## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
