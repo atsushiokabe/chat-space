@@ -6,14 +6,28 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+}
 
   .side_bar{
   width: 300px;
   background-color: #253141;
     .side_header{
+      display: flex;
       height: 100px;
       background-color: #253141;
       align-items: center;
+        .side_header__box{
+          height: 20px;
+          width: 260px;
+          background-color: #d8d8d8;
+          margin:20px;
+          .side_header__box__user-name{
+            
+          }
+          .side_header__box__menu{
+
+          }
+        }
     }
     .groups{
       height: calc(100vh - 100px);
@@ -35,5 +49,4 @@
       background-color: #d2d2d2;
       height: 90px;
     }
-}
 }
