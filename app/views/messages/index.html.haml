@@ -3,7 +3,13 @@
     .side_header
       .side_header__box
         %p.side_header__box__user-name Atsushi
-        %ul.side_header__box__menu JJJ
+        %ul.side_header__box__menu 
+          %li.side_header__box__menu__new-group
+            = link_to '#' do
+              = icon 'far fa-edit',class:'menu-icon'
+          %li.side_header__box__menu__edit-user
+            = link_to '#' do
+              = icon 'far fa-cog',class:'menu-icon'
     .groups
   .main_chat
     .main_header
