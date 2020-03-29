@@ -19,15 +19,27 @@
         .side_header__box{
           height: 20px;
           width: 260px;
-          background-color: #d8d8d8;
+          // background-color: #d8d8d8;
           margin:20px;
           display: flex;
           justify-content: space-between;
+          ul{
+            text-align: right;
+          }
           .side_header__box__user-name{
-            
+            color: white;
           }
           .side_header__box__menu{
             display: flex;
+              li{
+                margin-left: 5px;
+                a{
+                  color: white;
+                }
+                .side_header{
+                  margin-left: 5px;
+              }
+              }
           }
         }
     }
