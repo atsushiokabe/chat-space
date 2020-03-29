@@ -1,18 +1,4 @@
 .wrapper
-  .side_bar
-    .side_header
-      .side_header__box
-        %p.side_header__box__user-name Atsushi
-        %ul.side_header__box__menu 
-          %li.side_header__box__menu__new-group
-            = link_to '#' do
-              = icon 'far fa-edit',class:"new"
-          %li.side_header__box__menu__edit-user
-            = link_to '#' do
-              = icon 'fa fa-cog',class:"edit"
-    .groups
-  .main_chat
-    .main_header
-    .messages
-    .form
+  = render "side_bar"
+  = render "main_chat"
 
