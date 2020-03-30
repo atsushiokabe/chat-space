@@ -112,6 +112,28 @@
     .messages{
       background-color: #fafafa;
       height: calc(100vh - 100px - 90px);
+      padding: 35px 40px;
+      .message{
+        padding-bottom: 46px;
+        .message__info{
+          display: flex;
+          .message__info__name{
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+          }
+          .message__info__date{
+            margin-left: 10px;
+            color: #999999;
+            font-size: 12px;
+          }
+        }
+        .message__text{
+          color: #434a54;
+          font-size: 14px;
+        }
+      }
     }
     .form{
       background-color: #d2d2d2;
