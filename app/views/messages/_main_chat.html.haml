@@ -20,3 +20,10 @@
         %p.message__info__date 2020-03-31
       %p.message__text hellooo
   .form
+    %form.new-message
+      .input-box
+        %input{type:"text",class:"input-box__text",placeholder:"type a message"}
+        %label{class:"input-box__image"}
+          = icon('fas','image')
+          %input{type:'file', class:"input-box__image__file"}
+      %input{type: "submit",class:"submit-btn"}
