@@ -1,0 +1,22 @@
+.side_bar
+  .side_header
+    .side_header__box
+      %p.side_header__box__user-name Atsushi
+      %ul.side_header__box__menu 
+        %li.side_header__box__menu__new-group
+          = link_to '#' do
+            = icon 'far fa-edit',class:"new"
+        %li.side_header__box__menu__edit-user
+          = link_to '#' do
+            = icon 'fa fa-cog',class:"edit"
+  .groups
+    = link_to '#',class:"group" do
+      %p.group__group-name
+        group1
+      %p.group__latest-message
+        まだメッセージがありません。
+    = link_to '#',class:"group" do
+      %p.group__group-name
+        group2
+      %p.group__latest-message
+        まだメッセージがありません。
