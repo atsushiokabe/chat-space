@@ -9,16 +9,7 @@
     = link_to '#' do
       .main_header__edit-btn Edit
   .messages
-    .message
-      .message__info
-        %p.message__info__name Okabe
-        %p.message__info__date 2020-03-30
-      %p.message__text hello
-    .message
-      .message__info
-        %p.message__info__name atsushi
-        %p.message__info__date 2020-03-31
-      %p.message__text hellooo
+    = render @messages
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
