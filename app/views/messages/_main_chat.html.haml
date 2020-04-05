@@ -2,10 +2,13 @@
   .main_header
     .main_header__left-side
       %h2.main_header__left-side__current-group
-        group1
+        = @group.name
       %ul.main_header__left-side__member-list
         Member:
-        %li.main_header__left-side__member-list__member atsushi
+        %li.main_header__left-side__member-list__member
+          - @group.users.each do |user|
+            = user.name
+            
     = link_to '#' do
       .main_header__edit-btn Edit
   .messages
