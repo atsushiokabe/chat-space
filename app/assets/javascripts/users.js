@@ -6,8 +6,7 @@ $(function(){
         <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
       </div>
     `;
-    console.log(html)
-    // $("#user-search-result").append(html);
+    $("#user-search-result").append(html);
   }
   function nouser() {
     let html = `
@@ -40,6 +39,9 @@ $(function(){
       })
       .fail(function(){
         alert("通信エラーです。ユーザーが表示できません。");
-      })
+      });
+  });
+  $(document).on('click', ".chat-group-user__btn--add",function(){
+    console.log("hello");
   })
 })
