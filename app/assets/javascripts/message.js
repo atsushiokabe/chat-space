@@ -23,7 +23,7 @@ $(function(){
       var html =
         `<div class="message" data-message-id=${message.id}>
           <div class="message__info">
-            <div class=message__info__name">
+            <div class="message__info__name">
               ${message.user_name}
             </div>
             <div class="message__info__date">
